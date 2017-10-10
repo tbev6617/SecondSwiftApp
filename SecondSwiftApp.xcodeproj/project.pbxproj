@@ -35,6 +35,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0842D7B11F8D18E0000BC419 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				08F7234F1F8D041C00FF61A7 /* ViewController.swift */,
+				08F7234D1F8D041C00FF61A7 /* AppDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0842D7B31F8D191F000BC419 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				08F723541F8D041C00FF61A7 /* Assets.xcassets */,
+				08F723591F8D041C00FF61A7 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0842D7B41F8D195A000BC419 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				08F723511F8D041C00FF61A7 /* Main.storyboard */,
+				08F723561F8D041C00FF61A7 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		08F723411F8D041C00FF61A7 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +81,9 @@
 		08F7234C1F8D041C00FF61A7 /* SecondSwiftApp */ = {
 			isa = PBXGroup;
 			children = (
-				08F7234D1F8D041C00FF61A7 /* AppDelegate.swift */,
-				08F7234F1F8D041C00FF61A7 /* ViewController.swift */,
-				08F723511F8D041C00FF61A7 /* Main.storyboard */,
-				08F723541F8D041C00FF61A7 /* Assets.xcassets */,
-				08F723561F8D041C00FF61A7 /* LaunchScreen.storyboard */,
-				08F723591F8D041C00FF61A7 /* Info.plist */,
+				0842D7B41F8D195A000BC419 /* View */,
+				0842D7B11F8D18E0000BC419 /* Controller */,
+				0842D7B31F8D191F000BC419 /* Resources */,
 			);
 			path = SecondSwiftApp;
 			sourceTree = "<group>";
@@ -277,7 +301,8 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = SecondSwiftApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SecondSwiftApp/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CTEC.SecondSwiftApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -294,7 +319,8 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = SecondSwiftApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SecondSwiftApp/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CTEC.SecondSwiftApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
