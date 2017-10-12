@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     @IBAction func colorChangeMethod(_ sender: UIButton)
     {
         ColorButton.backgroundColor = randomColor()
+        ColorButton.setTitleColor(.white, for : .normal)
         view.backgroundColor = randomColor()
         changeLabel()
     }
