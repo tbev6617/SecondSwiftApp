@@ -9,7 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+//    var timesClicked : Int
+//    public init ()
+//    {
+//        timesClicked = 0;
+//    }
+    var timesClicked = 0;
     @IBOutlet weak var ColorButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,8 +24,14 @@ class ViewController: UIViewController {
     {
         ColorButton.backgroundColor = randomColor()
         view.backgroundColor = randomColor()
+        changeLabel()
     }
-    
+    @IBOutlet weak var clickLabel: UITextField!
+    private func changeLabel()
+    {
+        timesClicked += 1
+        clickLabel.text = "You have clicked \(timesClicked) times"
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
