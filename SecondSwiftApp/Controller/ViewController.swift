@@ -9,41 +9,34 @@
 import UIKit
 
 class ViewController: UIViewController {
-//    var timesClicked : Int
-//    public init ()
-//    {
-//        timesClicked = 0;
-//    }
-    var timesClicked = 0;
+    lazy var colorTool : ColorTools = ColorTools()
+    
     @IBOutlet weak var ColorButton: UIButton!
+    @IBOutlet weak var clickLabel: UITextField!
+    @IBOutlet weak var nextScreenButton: UIButton!
+    var timesClicked = 0;
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
     @IBAction func colorChangeMethod(_ sender: UIButton)
     {
-        ColorButton.backgroundColor = randomColor()
+        ColorButton.backgroundColor = colorTool.makeRandomColor()
         ColorButton.setTitleColor(.white, for : .normal)
-        view.backgroundColor = randomColor()
+        view.backgroundColor = colorTool.makeRandomColor()
         changeLabel()
     }
-    @IBOutlet weak var clickLabel: UITextField!
+    
     private func changeLabel()
     {
         timesClicked += 1
         clickLabel.text = "You have clicked \(timesClicked) times"
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    private func randomColor() -> UIColor
-    {
-        let blueAmount = CGFloat (Double (arc4random_uniform(256)) / 255)
-        let redAmount = CGFloat (Double (arc4random_uniform(256)) / 255)
-        let greenAmount = CGFloat (Double (arc4random_uniform(256)) / 255)
-        return UIColor(red : redAmount, green : greenAmount, blue : blueAmount, alpha : CGFloat(1.0))
-    }
-
 }
 
