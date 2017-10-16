@@ -10,13 +10,13 @@ import UIKit
 
 class ThirdScreenController: UIViewController
 {
-
+    
+    lazy var colorTool : ColorTools = ColorTools()
     override func viewDidLoad()
     {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
         view.backgroundColor = colorTool.makeRandomColor()
     }
 
