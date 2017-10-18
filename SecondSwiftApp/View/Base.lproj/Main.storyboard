@@ -185,7 +185,7 @@ A05ldyBJbGx1c2lvbg
                                 <rect key="frame" x="146" y="452" width="118" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </slider>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pNc-x8-YDv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Neat circle optical illusion" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pNc-x8-YDv">
                                 <rect key="frame" x="80" y="118" width="250" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -206,6 +206,9 @@ A05ldyBJbGx1c2lvbg
             <point key="canvasLocation" x="2416.8000000000002" y="41.829085457271368"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Neat circle optical illusion" width="250" height="250"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="WCO-Ux-Qo0"/>
         <segue reference="7ro-Zy-31l"/>
