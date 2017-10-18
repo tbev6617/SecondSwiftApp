@@ -46,11 +46,11 @@
 		0842D7B11F8D18E0000BC419 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				08F7234D1F8D041C00FF61A7 /* AppDelegate.swift */,
 				08F7234F1F8D041C00FF61A7 /* ViewController.swift */,
 				0857FE211F8FB8C200E2347C /* SecondScreenController.swift */,
 				0804EF8F1F95040800699ADF /* ThirdScreenController.swift */,
 				08E4CB5C1F9799A7002739FB /* NeatScreenController.swift */,
-				08F7234D1F8D041C00FF61A7 /* AppDelegate.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

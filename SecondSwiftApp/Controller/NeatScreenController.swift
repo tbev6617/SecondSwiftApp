@@ -14,6 +14,8 @@ class NeatScreenController: UIViewController
     
     
     private var imageCounter = 0;
+    private var soundPlayer : AVAudioPlayer?
+    private lazy var colorTool : ColorTools = ColorTools()
     
     @IBOutlet weak var illusionImage: UIImageView!
     
