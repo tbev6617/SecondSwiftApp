@@ -10,6 +10,7 @@
 		0804EF901F95040800699ADF /* ThirdScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0804EF8F1F95040800699ADF /* ThirdScreenController.swift */; };
 		0857FE221F8FB8C200E2347C /* SecondScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0857FE211F8FB8C200E2347C /* SecondScreenController.swift */; };
 		0857FE281F8FBF4D00E2347C /* ColorTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0857FE271F8FBF4D00E2347C /* ColorTools.swift */; };
+		08E4CB5D1F9799A7002739FB /* NeatScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E4CB5C1F9799A7002739FB /* NeatScreenController.swift */; };
 		08F7234E1F8D041C00FF61A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F7234D1F8D041C00FF61A7 /* AppDelegate.swift */; };
 		08F723501F8D041C00FF61A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F7234F1F8D041C00FF61A7 /* ViewController.swift */; };
 		08F723531F8D041C00FF61A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08F723511F8D041C00FF61A7 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		0804EF8F1F95040800699ADF /* ThirdScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreenController.swift; sourceTree = "<group>"; };
 		0857FE211F8FB8C200E2347C /* SecondScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenController.swift; sourceTree = "<group>"; };
 		0857FE271F8FBF4D00E2347C /* ColorTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTools.swift; sourceTree = "<group>"; };
+		08E4CB5C1F9799A7002739FB /* NeatScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeatScreenController.swift; sourceTree = "<group>"; };
 		08F7234A1F8D041C00FF61A7 /* SecondSwiftApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecondSwiftApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08F7234D1F8D041C00FF61A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08F7234F1F8D041C00FF61A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,10 +46,11 @@
 		0842D7B11F8D18E0000BC419 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				0804EF8F1F95040800699ADF /* ThirdScreenController.swift */,
 				08F7234F1F8D041C00FF61A7 /* ViewController.swift */,
-				08F7234D1F8D041C00FF61A7 /* AppDelegate.swift */,
 				0857FE211F8FB8C200E2347C /* SecondScreenController.swift */,
+				0804EF8F1F95040800699ADF /* ThirdScreenController.swift */,
+				08E4CB5C1F9799A7002739FB /* NeatScreenController.swift */,
+				08F7234D1F8D041C00FF61A7 /* AppDelegate.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08F723501F8D041C00FF61A7 /* ViewController.swift in Sources */,
+				08E4CB5D1F9799A7002739FB /* NeatScreenController.swift in Sources */,
 				08F7234E1F8D041C00FF61A7 /* AppDelegate.swift in Sources */,
 				0857FE221F8FB8C200E2347C /* SecondScreenController.swift in Sources */,
 				0804EF901F95040800699ADF /* ThirdScreenController.swift in Sources */,

@@ -11,6 +11,8 @@ import UIKit
 class SecondScreenController : UIViewController
 {
     
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var nextButton: UIButton!
     lazy var colorTool :ColorTools = ColorTools()
     @IBOutlet weak var backScreenButton: UIButton!
     

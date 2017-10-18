@@ -10,7 +10,8 @@ import UIKit
 
 class ThirdScreenController: UIViewController
 {
-    
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var nextButton: UIButton!
     lazy var colorTool : ColorTools = ColorTools()
     override func viewDidLoad()
     {
@@ -25,6 +26,7 @@ class ThirdScreenController: UIViewController
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
     
 
     /*

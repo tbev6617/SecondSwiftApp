@@ -18,19 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gv4-HS-W2o">
-                                <rect key="frame" x="136" y="318" width="103" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Click for colors">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="colorChangeMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mOc-CV-lAk"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="You have clicked 0 times" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kSE-WM-qd6">
-                                <rect key="frame" x="88" y="280" width="198" height="30"/>
+                                <rect key="frame" x="114" y="280" width="198" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -44,6 +33,17 @@
                                 </state>
                                 <connections>
                                     <segue destination="dYb-mO-9Vi" kind="show" id="WSS-nO-ULc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gv4-HS-W2o">
+                                <rect key="frame" x="162" y="318" width="103" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Click for colors">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="colorChangeMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mOc-CV-lAk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -93,7 +93,9 @@
                         <viewLayoutGuide key="safeArea" id="VGb-RT-OVG"/>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="wJD-v9-PID" id="Rpf-UY-Ztr"/>
                         <outlet property="backScreenButton" destination="wJD-v9-PID" id="pBs-We-ZQg"/>
+                        <outlet property="nextButton" destination="DaI-Td-ca5" id="tOA-5n-kNH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zLS-g8-jld" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -108,8 +110,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKV-a1-3bG">
+                                <rect key="frame" x="313" y="617" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uzA-Up-jrF" kind="show" id="9bg-nR-f8X"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wN-BP-C8y">
-                                <rect key="frame" x="22" y="617" width="34" height="30"/>
+                                <rect key="frame" x="30" y="617" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -122,14 +134,80 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Wpy-eC-B5N"/>
                     </view>
+                    <connections>
+                        <outlet property="backButton" destination="1wN-BP-C8y" id="IEz-tP-4Hp"/>
+                        <outlet property="nextButton" destination="zKV-a1-3bG" id="hbG-uM-yfa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hhh-tp-PzG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1618" y="38"/>
+            <point key="canvasLocation" x="1616.8" y="37.331334332833585"/>
+        </scene>
+        <!--Neat Screen Controller-->
+        <scene sceneID="73l-MH-9gm">
+            <objects>
+                <viewController id="uzA-Up-jrF" customClass="NeatScreenController" customModule="SecondSwiftApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="keh-uj-smW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPB-Rk-7CH">
+                                <rect key="frame" x="32" y="617" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Jut-mH-E0e" kind="show" id="WCO-Ux-Qo0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NvI-AG-WoI">
+                                <rect key="frame" x="155" y="414" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play/Pause">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbx-ry-idQ">
+                                <rect key="frame" x="150" y="376" width="111" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <string key="title" base64-UTF8="YES">
+A05ldyBJbGx1c2lvbg
+</string>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="imageCycle:" destination="uzA-Up-jrF" eventType="touchUpInside" id="iMm-JA-bbG"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="KYk-j1-HDl">
+                                <rect key="frame" x="146" y="452" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pNc-x8-YDv">
+                                <rect key="frame" x="80" y="118" width="250" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="iuT-5R-Qf0"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="cPB-Rk-7CH" id="d9y-AV-iBp"/>
+                        <outlet property="illusionImage" destination="pNc-x8-YDv" id="Y2n-SY-3Lo"/>
+                        <outlet property="imageButton" destination="wbx-ry-idQ" id="wz0-kM-pth"/>
+                        <outlet property="playPauseButton" destination="NvI-AG-WoI" id="EXI-LO-H9H"/>
+                        <outlet property="volumeSlider" destination="KYk-j1-HDl" id="3dT-oj-41v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="isf-LU-Nno" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2416.8000000000002" y="41.829085457271368"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="7cf-fr-zpV"/>
+        <segue reference="WCO-Ux-Qo0"/>
         <segue reference="7ro-Zy-31l"/>
     </inferredMetricsTieBreakers>
 </document>
