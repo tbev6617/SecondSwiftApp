@@ -10,15 +10,22 @@ import UIKit
 
 class SecondScreenController : UIViewController
 {
-    
+    @IBOutlet weak var colorButton: UIButton!
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
-    lazy var colorTool :ColorTools = ColorTools()
     @IBOutlet weak var backScreenButton: UIButton!
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        view.backgroundColor = colorTool.makeRandomColor()
+        view.backgroundColor = .green
+        colorButton.backgroundColor = .red
+    }
+    
+    @IBAction func christmasSwitch(_ sender: Any)
+    {
+        let tempColor : UIColor = colorButton.backgroundColor!
+        colorButton.backgroundColor = view.backgroundColor
+        view.backgroundColor = tempColor
     }
 }
