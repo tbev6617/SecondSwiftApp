@@ -186,6 +186,9 @@
                                 <state key="normal" title="Play/Pause">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="soundPlay:" destination="uzA-Up-jrF" eventType="touchUpInside" id="WgT-45-ds6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbx-ry-idQ">
                                 <rect key="frame" x="150" y="376" width="111" height="30"/>
@@ -230,7 +233,7 @@ A05ldyBJbGx1c2lvbg
         <image name="Neat circle optical illusion" width="250" height="250"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7cf-fr-zpV"/>
+        <segue reference="WCO-Ux-Qo0"/>
         <segue reference="WSS-nO-ULc"/>
     </inferredMetricsTieBreakers>
 </document>
