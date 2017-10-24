@@ -11,8 +11,6 @@ import AVFoundation
 
 class NeatScreenController: UIViewController
 {
-    
-    
     private var imageCounter = 0
     private var soundPlayer : AVAudioPlayer?
     private lazy var colorTool : ColorTools = ColorTools()
@@ -103,4 +101,10 @@ class NeatScreenController: UIViewController
     {
         volumeSlider.value = Float ((soundPlayer?.currentTime)!)
     }
+    @IBAction func slidingSound(_ sender: UISlider)
+    {
+        let seekTime = Double (volumeSlider.value)
+        soundPlayer?.currentTime = seekTime
+    }
+    
 }
